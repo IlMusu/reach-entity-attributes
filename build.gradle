@@ -25,6 +25,10 @@ dependencies {
 
 	// Fabric API. This is technically optional, but you probably want it anyway.
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
+
+    implementation("com.google.code.findbugs:jsr305:$jsr305_version") {
+        transitive = false
+    }
 }
 
 processResources {
